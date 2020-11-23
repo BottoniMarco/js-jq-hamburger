@@ -1,15 +1,17 @@
-var hm = $("#hamburger-menu");
+var hm = $(".hamburger-menu");
 
-var chiudi = $("#close");
+var hamburgeIcon = $(".fas.fa-bars");
 
-hm.click(
+var chiudi = $(".close");
+
+hamburgeIcon.click(
   function() {
-    $("ul").show(200);
+    hm.show(200);
   }
 );
 
 chiudi.click(
   function() {
-    $("ul").hide(200);
+    hm.hide(200);
   }
 );
